@@ -1,0 +1,3 @@
+require './app'
+
+Erierb.run!

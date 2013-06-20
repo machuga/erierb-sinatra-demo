@@ -1,0 +1,17 @@
+h1 List of users
+- if @users.empty?
+  h3 There are no users
+
+a.btn.btn-primary href="/users/new" Add User +
+
+- @users.each do |user|
+  .row
+    .span3
+      h3 User:
+      h4 #{user.name}
+    .span6
+      h3 Type:
+      h4 #{user.role}
+    .span3
+      h3 Actions:
+      btn.btn.btn-danger Do Nothing!
